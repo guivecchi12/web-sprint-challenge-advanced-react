@@ -14,7 +14,7 @@ export const useForm = (iValue, key) => {
     const handleChanges = (e) => {
         setValue({ ...values, [e.target.name]: e.target.value, success:false });
     };
-    console.log(values);
+    // console.log(values);
 
     return [values, handleChanges, handleSubmit];
 }
